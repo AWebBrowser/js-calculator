@@ -5,14 +5,18 @@
  * @variable PRIVATE { Number } `total`
  * @return {object} `calculator` object that can be used
  */
-
-
+ function calculatorModule(memory, total) {
+   return console.log(total);
+ }
+ function calculatorMultiply(num1, num2){
+    total = num1 * num2;
+  }
+ calculatorMultiply();
   /**
    * sets the `total` to the number passed in
    * @param  { Number } x
    * @return { Number }    current total
    */
-
 
   /**
    * Return the value of `total`
