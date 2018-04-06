@@ -6,12 +6,10 @@
  * @return {object} `calculator` object that can be used
  */
  function calculatorModule(memory, total) {
-   return console.log(total);
+   var memory= 0;
+   var total= 0;
+   return calculator();
  }
- function calculatorMultiply(num1, num2){
-    total = num1 * num2;
-  }
- calculatorMultiply();
   /**
    * sets the `total` to the number passed in
    * @param  { Number } x
