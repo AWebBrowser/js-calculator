@@ -8,7 +8,13 @@
  function calculatorModule(memory, total) {
    var memory= 0;
    var total= 0;
-   return calculator();
+   return calculator(memory,total);
+ }
+ function calculator(memory,total,num1,num2){
+  calculatorMultiply(num1,num2,total);
+  calculatorDivide(num1,num2,total);
+  calculatorAdd(num1,num2,total);
+  calculatorSubtract(num1,num2,total);
  }
   /**
    * sets the `total` to the number passed in
