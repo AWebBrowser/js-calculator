@@ -5,23 +5,34 @@
  * @variable PRIVATE { Number } `total`
  * @return {object} `calculator` object that can be used
  */
- function calculatorModule(memory, total) {
+ function calculatorModule() {
    var memory= 0;
    var total= 0;
    return calculator(memory,total);
  }
- function calculator(memory,total,num1,num2){
+calculatorModule();
+function calculator(memory,total,num1,num2){
   calculatorMultiply(num1,num2,total);
   calculatorDivide(num1,num2,total);
   calculatorAdd(num1,num2,total);
   calculatorSubtract(num1,num2,total);
+  if (memory !== 0){
+   console.log("Right now you have " +memory+" in your calculator's memory!");
+  }
+  if (total !== 0){
+   console.log("Right now you have "+total+"!")
+  }
  }
   /**
    * sets the `total` to the number passed in
    * @param  { Number } x
-   * @return { Number }    current total
+   * @return { Number }    //current total
    */
-
+ calculatorMultiply(){
+  num1 * num2 = total
+  console.log(){}
+  calculator()
+ }
   /**
    * Return the value of `total`
    * @return { Number }
